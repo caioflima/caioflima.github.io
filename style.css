@@ -397,4 +397,364 @@
       display: none;
     }
   }
-  
+  -----------------------------
+
+  /*--------------------------------------------------------------
+- Rodapé Alternativo
+--------------------------------------------------------------*/
+footer {
+	background-color: #222;
+}
+footer .base {
+	max-width: 1080px;
+}
+.rodape {
+	color: #fff;
+	font-size: 12px;
+	padding: 35px 0px;
+}
+.menu-rodape {
+	font-family: 'montserrat-regular';
+	font-size: 0.9rem;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.menu-rodape li {
+	display: inline-block;
+	border-right: 1px solid #999;
+	padding: 0px 10px 0 5px;
+	margin: 8px 3px;
+}
+.menu-rodape li a {
+	color: #fafafa;
+	-webkit-transition: all 300ms linear 0s;
+	-o-transition: all 300ms linear 0s;
+	transition: all 300ms linear 0s;
+}
+.menu-rodape li a:hover {
+	color: #00aced;
+}
+.menu-rodape li:last-child {
+	border-right: none;
+	padding-right: 0;
+}
+.telefone-rodape {
+	float: left;
+	font-size: 16px;
+	padding: 0px 0 16px;
+	letter-spacing: 1.2px;
+}
+.telefone-rodape img {
+	padding-left: 5px;
+}
+.telefone-rodape a {
+	/*Link aparece apenas no mobile*/
+	color: #0084b4;
+	text-decoration: none;
+}
+.telefone-rodape a:hover {
+	color: #666;
+}
+.direitos-autorais-rodape {
+	color: #777;
+	font-size: 10px;
+	text-align: center;
+	padding: 40px 0;
+	background-color: #333;
+}
+.ajuste-base-direitos {
+	max-width: 1040px;
+	margin: 0 auto;
+}
+.direito-1{
+	text-align: left;
+}
+.direito-2{
+	text-align: right;
+	line-height: 1.5em;
+}
+.menu-rodape ul li ul {
+	display: none;
+}
+/*COLUNAS RODAPE*/ /*ESTA PARTE REFERE AO RODAPE COM COLUNAS*/
+.flex{
+	display: flex;
+	max-width: 1280px;
+}
+.flex > div{
+	flex: 1 1;
+}
+.col-rodape-1 , .col-rodape-2,
+.col-rodape-3, .col-rodape-4 {
+	color: #777;
+	padding: 20px;
+}
+.col-rodape-1 i, .col-rodape-2 i,
+.col-rodape-3 i{
+	color: #999;
+}
+.col-rodape-3 span{
+	letter-spacing: 0.04em;
+}
+.col-rodape-3 .numero{
+	padding: 6px 0px;
+}
+.col-rodape-4 i {
+	color: #999;
+	font-size: 16px;
+	vertical-align: text-bottom;
+}
+.col-rodape-4 .endereco-rodape {
+	line-height: 1.5em;
+	text-align: justify;
+}
+.col-rodape-4 .icones-validacao, .col-rodape-4 .redes-sociais-rodape {
+	padding-top: 20px;
+}
+.rodape h3{
+	letter-spacing: 0.04em;
+	color: #ccc;
+	padding: 6px 15px;
+	margin-bottom: 28px;
+	border-left: 3px solid #0077b5; /*------Azul------*/
+	/*border-left: 3px solid #ac0;*/ /*------Verde------*/
+	/*border-left: 3px solid orange;*/ /*------Laranja------*/
+	/*border-left: 3px solid #D33C44;*/ /*------Vermelho------*/
+}
+/*.col-rodape-1 {
+	text-align: center;
+}*/
+.col-rodape-1 img {
+	width: 180px;
+	padding: 0 0 20px;
+}
+.col-rodape-1 p, .col-rodape-2 p
+.col-rodape-3 p, .col-rodape-4 p{
+	margin-bottom: 30px;
+	padding: 10px 5px;
+	color: #777;
+	letter-spacing: 0.04em;
+	font-size: 13px;
+}
+.col-rodape-2 .menu-rodape {
+	border-right: 0;
+	clear: right;
+	text-align: left;
+	font-size: 12px;
+}
+.col-rodape-2 .menu-rodape a{
+	color: #777;
+}
+.col-rodape-2 .menu-rodape a:before{
+	color: #aaa;
+	margin-right: 5px;
+	font-family: 'FontAwesome';
+	content: "\f105";
+	font-weight: 700;
+}
+.col-rodape-2 .menu-rodape li {
+	display: block;
+	padding: 4px 0 13px;
+	border-right: none;
+	border-bottom: 1px solid #333;
+}
+.col-rodape-3 .telefone-rodape {
+	float: none;
+	text-align: start;
+	font-size: 14px;
+	padding: 0px 0 16px;
+	letter-spacing: 1.2px;
+}
+.col-rodape-3 h5 {
+	font-weight: normal;
+	margin: 0 0 10px;
+}
+.col-rodape-3 i{
+	margin-right: 5px;
+}
+/* ----------------------whatsapp icone ------------------ */
+.whatsapp-icon-fix{
+	position: fixed;
+	bottom: 80px;
+	right: 18px;
+	z-index: 999;
+}
+.whatsapp-icon-fix img{
+	width: 40px;
+	height: auto;
+}
+@font-face {
+	font-family:'si';
+	src: url('fonts-midia/socicon.eot');
+	src: url('fonts-midia/socicon.eot?#iefix') format('embedded-opentype'), url('fonts-midia/socicon.woff') format('woff'), url('fonts-midia/socicon.ttf') format('truetype'), url('fonts-midia/socicon.svg#icomoonregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+.redes-sociais-rodape {
+	float: none;
+	clear: both;
+	padding: 15px 0 0 0;
+	list-style: none;
+	font-family: 'blank';
+}
+.redes-sociais-rodape li {
+	margin: 3px;
+	font-family: 'Times New Roman', sans-serif;
+	display: inline-block;
+}
+.redes-sociais-rodape li a {
+	font-family: si;
+	text-align: center;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 14px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #ffffff;
+	/* cor dos ícones */
+	transition: all 0.2s ease 0s;
+}
+/* .redes-sociais-rodape li a:hover {
+	color: #000000;
+} */
+/* ----- Facebook ----- */
+.redes-sociais-rodape .icone-facebook {
+	background-color: #3e5b98;
+}
+.redes-sociais-rodape .icone-facebook:hover {
+	background-color: #526fac;
+}
+.redes-sociais-rodape .icone-facebook:before {
+	content:'b';
+}
+/* ----- Twitter ----- */
+.redes-sociais-rodape .icone-twitter {
+	background-color: #4da7de;
+}
+.redes-sociais-rodape .icone-twitter:hover {
+	background-color: #61bbf2;
+}
+.redes-sociais-rodape .icone-twitter:before {
+	content:'a';
+}
+/* ----- Google Plus ----- */
+.redes-sociais-rodape .icone-google {
+	background-color: #d93e2d;
+}
+.redes-sociais-rodape .icone-google:hover {
+	background-color: #ed5241;
+}
+.redes-sociais-rodape .icone-google:before {
+	content:'c';
+}
+/* ----- Linkedin ----- */
+.redes-sociais-rodape .icone-linkedin {
+	background-color: #3371b7;
+}
+.redes-sociais-rodape .icone-linkedin:hover {
+	background-color: #4785cb;
+}
+.redes-sociais-rodape .icone-linkedin:before {
+	content:'j';
+}
+/* ----- Youtube ----- */
+.redes-sociais-rodape .icone-youtube {
+	background-color: #e02a20;
+}
+.redes-sociais-rodape .icone-youtube:hover {
+	background-color: #f43e34;
+}
+.redes-sociais-rodape .icone-youtube:before {
+	content:'r';
+}
+/* ----- Pinterest ----- */
+.redes-sociais-rodape .icone-pinterest {
+	background-color: #c92619;
+}
+.redes-sociais-rodape .icone-pinterest:hover {
+	background-color: #dd3a2d;
+}
+.redes-sociais-rodape .icone-pinterest:before {
+	content:'d';
+}
+/* ----- RSS ----- */
+.redes-sociais-rodape .icone-rss {
+	background-color: #f26109;
+}
+.redes-sociais-rodape .icone-rss:hover {
+	background-color: #ff751d;
+}
+.redes-sociais-rodape .icone-rss:before {
+	content:',';
+}
+/*FIM COLUNAS RODAPE*/
+@media (max-width: 780px) {
+	.flex{
+		display: block;
+	}
+	/*COLUNAS RODAPE AJUSTES*/
+	.col-rodape-1, .col-rodape-2, .col-rodape-3 .col-rodape-4{
+		float: none;
+		display: block;
+		padding: 6px;
+	}
+	.col-rodape-1, .col-rodape-2, .col-rodape-3, .col-rodape-4  > div{
+		text-align: center;
+	}
+	.col-rodape-2 .menu-rodape {
+		float: none;
+		margin-left: 0;
+	}
+	.col-rodape-3 .endereco-rodape {
+		font-size: 14px;
+		float: none;
+	}
+	.col-rodape-4 .redes-sociais-rodape {
+		float: none;
+	}
+	.col-rodape-3 .telefone-rodape{
+		text-align: center;
+	}
+	.col-rodape-4{
+		text-align: center;
+	}
+	.col-rodape-4 .endereco-rodape{
+		text-align: center;
+	}
+	/*--------------------------------------------------------------
+	- Rodapé
+	--------------------------------------------------------------*/
+	
+	.icones-validacao img {
+		margin: 0 7px;
+	}
+	.telefone-rodape div {
+		margin: 15px 0 0;
+	}
+	.rodape {
+		padding: 35px 25px;
+	}
+	.rodape h3 {
+		margin: 28px 0 5px;
+		border-left: none;
+	}
+	.col-rodape-2 .menu-rodape li {
+		text-align: center;
+		width: 280px;
+		margin: 0 auto;
+	}
+	input[type="file"] {
+		margin: 5px 9px;
+	}
+	
+}
+@media (max-width:480px) {
+	.col-rodape-2 .menu-rodape li {
+		width: 100%; 
+	}
+}
