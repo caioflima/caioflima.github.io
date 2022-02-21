@@ -1,3 +1,10 @@
+.topo {
+	border-bottom: 1px solid #eee;
+	/*background-color: #fff;*/
+	background-color: rgba(255, 255, 255, 0.8);
+	/*margin-top: 10px;*/
+}
+
 .topo .logo img{
 	width: 150px;
 	padding: 4px 0;
@@ -9,9 +16,18 @@
 	font-family: 'montserrat-bold',sans-serif;
 	/*float: left;*/
 }
+
+.barra-topo {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+	color: #333;
+	width: 100%;
+	height: 45px;
+}
+
 .menu-principal ul li, .menu-principal ul ul a {
 	color: #fff;
 }
+
 .topo .menu-principal ul li ul li {
 	background-color: #0077b5; /*------Azul------*/
 	/*background-color: #ac0;*/ /*------Verde------*/
@@ -24,6 +40,7 @@
 	/*border-color: #b32c33;*/ /*------Vermelho------*/
 	text-transform: none;
 }
+
 .menu-principal ul li ul li:hover, .menu-principal ul ul a:hover {
 	background-color: #333;
 	-webkit-transition: width .15s cubic-bezier(0.680, 0, 0.265, 1);
@@ -51,4 +68,108 @@
 .menu-barra ul li{
 	display: inline-table;
 	padding: 18px 15px;
+}
+
+.contato-topo {
+	float: left;
+	margin: 7px 0 0;
+	padding: 0 25px 0 0;
+	text-align: left;
+}
+.contato-topo .telefone-topo {
+	color: #777;
+	font-size: 18px;
+}
+
+.contato-topo .telefone-topo strong img {
+	padding-left: 5px;
+}
+.contato-topo .telefone-topo a {
+	/* Link Aparece apenas no mobile */
+	color: #0077b5;
+	text-decoration: none;
+}
+.contato-topo .telefone-topo a:hover {
+	color: #999;
+}
+
+-------------------------------------------------------------------
+
+.menu-principal {
+	padding: 0 15px;
+	margin-top: 15px;
+	/*background: #1250d2;*/
+	line-height: 50px;
+	width: auto;
+	float: right;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: right;
+	letter-spacing: 0.07em;
+	font-weight: bold;
+}
+.menu-principal a {
+	color: #aaa;
+	padding: 0 10px;
+	-webkit-transition: all 300ms linear 0s;
+	-o-transition: all 300ms linear 0s;
+	transition: all 300ms linear 0s;
+}
+.menu-principal a:hover {
+	color: #1250d2;
+}
+.menu-principal ul {
+	list-style: none;
+}
+.menu-principal ul li {
+	display: inline-block;
+	position: relative;
+}
+/*----- Sub Menu -----*/
+.menu-principal ul ul {
+	max-width: 800px;
+	min-width: 550px;
+	/* Tamanho do Sub Menu */
+	right: 0;
+	font-size: 14px;
+	position: absolute;
+	display: none;
+	line-height: normal;
+	padding-top: 10px;
+}
+.menu-principal ul li, .menu-principal ul ul a {
+	color: #999;
+	/*-- reset --*/
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+.menu-principal ul ul a {
+	display: block;
+	color: #fff;
+}
+.menu-principal ul li:hover, .menu-principal ul ul a:hover {
+	color: #1250d2;
+}
+.menu-principal ul ul ul {
+	left: 100%;
+	top: 0;
+}
+.menu-principal ul li ul li {	
+	/*display: block;*/
+	padding: 5px;
+	background: #fafafa;
+	border-bottom: 1px solid #fff;
+	/* ----- Menu com mais de 1 coluna ----- */
+	min-width: 273px;
+	/*width: 200px;*/
+	display: inline-block;
+}
+.menu-principal ul li:hover > ul {
+	display: block;
+	/*background: #aaa;
+	border: 1px solid #C0C0C0;*/
+	height: auto;
+	z-index: 999;
 }
