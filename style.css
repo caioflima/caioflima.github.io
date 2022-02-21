@@ -1,0 +1,54 @@
+.topo .logo img{
+	width: 150px;
+	padding: 4px 0;
+}
+.topo .menu-principal {
+	padding: 0 5px;
+	margin: 10px 0;
+	width: 72%;
+	font-family: 'montserrat-bold',sans-serif;
+	/*float: left;*/
+}
+.menu-principal ul li, .menu-principal ul ul a {
+	color: #fff;
+}
+.topo .menu-principal ul li ul li {
+	background-color: #0077b5; /*------Azul------*/
+	/*background-color: #ac0;*/ /*------Verde------*/
+	/*background-color: orange;*/ /*------Laranja------*/
+	/*background-color: #D33C44;*/ /*------Vermelho------*/
+	border-bottom: 1px solid;
+	border-color: #0c84c3; /*------Azul------*/
+	/*border-color: #98b700;*/ /*------Verde------*/
+	/*border-color: #e49400;*/ /*------Laranja------*/
+	/*border-color: #b32c33;*/ /*------Vermelho------*/
+	text-transform: none;
+}
+.menu-principal ul li ul li:hover, .menu-principal ul ul a:hover {
+	background-color: #333;
+	-webkit-transition: width .15s cubic-bezier(0.680, 0, 0.265, 1);
+	transition: width .15s cubic-bezier(0.680, 0, 0.265, 1);
+}
+
+.menu-barra{
+	float: right;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.menu-barra a{
+	color: #333;
+}
+.menu-barra a:hover{
+	color: #0077b5; /*------Azul------*/
+	/*color: #333;*/ /*------Verde------*/
+	/*color: #f9ff00;*/ /*------Laranja------*/
+	/*color: #ff8686;*/ /*------Vermelho------*/
+}
+.menu-barra ul{
+	display: table;
+}
+.menu-barra ul li{
+	display: inline-table;
+	padding: 18px 15px;
+}

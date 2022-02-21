@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>YourWeb</title>
 </head>
+
 <body>
-  <p>Site em Construção</p>
+	<div class="topo">
+		<div class="barra-topo">
+
+			<div class="contato-topo">
+				+55 11 99208-9968
+				+55 11 99207-2492
+			</div>
+
+			<div class="menu-barra">
+				<ul>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Duvidas</a></li>
+				</ul>
+			</div>
+
+			<div class="menu-principal">
+				<ul>
+					
+					<li><a href="" title="Página inicial">Home</a></li>
+					<li><a href="_exemplo.php" title="Página de Exemplo">Página de Exemplo</a></li>
+					<li><a href="_gerador/_gerador.php" title="Gerador">Gerador de Páginas</a></li>
+					
+					if(isset($menu)){
+					
+						<li>
+							<a href="" title="<?=$AtividadesEmpresa?> <?=$nomeSite?>"><?=$AtividadesEmpresa?></a>
+							<ul>
+								<?php echo retornaMenu("menuPrincipal"); ?>
+							</ul>
+						</li>
+						
+					}
+					
+					<li><a rel="nofollow" href="contato-telefone-email.php" title="Fale com a <?=$nomeSite?>">Contato</a></li>
+					
+				</ul>
+			</div>
+
+		</div>
+	</div>
 </body>
+
 </html>
