@@ -108,23 +108,28 @@
     }
 
     .slider__item:nth-child(1) {
-      background-color: #f44336;
+      background-color: black;
+      color: rgb(32, 252, 3);
     }
 
     .slider__item:nth-child(2) {
-      background-color: #9c27b0;
+     background-color: black;
+     color: rgb(32, 252, 3);
     }
 
     .slider__item:nth-child(3) {
-      background-color: #3f51b5;
+     background-color: black;
+     color: rgb(32, 252, 3);
     }
 
     .slider__item:nth-child(4) {
-      background-color: #03a9f4;
+     background-color: black;
+     color: rgb(32, 252, 3);
     }
 
     .slider__item:nth-child(5) {
-      background-color: #4caf50;
+      background-color: black;
+      color: rgb(32, 252, 3);
     }
 
 
@@ -499,7 +504,7 @@
 	transition: all 300ms linear 0s;
 }
 .menu-principal a:hover {
-	color: #1250d2;
+	color: rgb(32, 252, 3);
 }
 .menu-principal ul {
 	list-style: none;
@@ -532,7 +537,7 @@
 	color: #fff;
 }
 .menu-principal ul li:hover, .menu-principal ul ul a:hover {
-	color:  rgb(32, 252, 3);
+	color: #1250d2;
 }
 .menu-principal ul ul ul {
 	left: 100%;
@@ -569,7 +574,10 @@ footer .base {
 	color: #fff;
 	font-size: 12px;
 	padding: 35px 0px;
+    background-color: #000;
 }
+
+
 .menu-rodape {
 	font-family: 'montserrat-regular';
 	font-size: 0.9rem;
@@ -644,7 +652,7 @@ footer .base {
 }
 .col-rodape-1 , .col-rodape-2,
 .col-rodape-3, .col-rodape-4 {
-	color: #777;
+	color: #fff;
 	padding: 20px;
 }
 .col-rodape-1 i, .col-rodape-2 i,
@@ -671,10 +679,10 @@ footer .base {
 }
 .rodape h3{
 	letter-spacing: 0.04em;
-	color: #ccc;
+	color: #fff;
 	padding: 6px 15px;
 	margin-bottom: 28px;
-	border-left: 3px solid #0077b5; 
+	border-left: 3px solid rgba(32, 252, 3, 0.664); 
 	
 }
 .col-rodape-1 img {
@@ -685,7 +693,7 @@ footer .base {
 .col-rodape-3 p, .col-rodape-4 p{
 	margin-bottom: 30px;
 	padding: 10px 5px;
-	color: #777;
+	color: #fff;
 	letter-spacing: 0.04em;
 	font-size: 13px;
 }
@@ -696,7 +704,7 @@ footer .base {
 	font-size: 12px;
 }
 .col-rodape-2 .menu-rodape a{
-	color: #777;
+	color: #fff;
 }
 .col-rodape-2 .menu-rodape a:before{
 	color: #aaa;
@@ -859,6 +867,27 @@ footer .base {
 .colunas-conteudo > div{
 	flex: 1 1;
 }
+
+.conteudo {
+    height: 550px;
+    display: flex;
+}
+
+.img-conteudo{}
+
+.conteudo-img {
+    width: 800px;
+    height: 100%;
+}
+
+.inf-conteudo {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .blocos{
     height: 300px;
 	background-color: #f1f1f1;
@@ -873,7 +902,7 @@ footer .base {
 	transition: all 300ms linear 0s;
 }
 .blocos:hover{
-	border: 3px solid #777;
+	border: 3px solid rgb(32, 252, 3);
 	background-color: #fff;
 	padding: 22px 0;
 }
