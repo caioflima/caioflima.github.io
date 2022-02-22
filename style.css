@@ -14,7 +14,8 @@
 .topo .menu-principal {
 	width: 99%;
 	font-family: 'montserrat-bold',sans-serif;
-	/*float: left;*/
+	display: inline-flex;
+    justify-content: space-between;
 }
 
 .barra-topo {
@@ -556,6 +557,11 @@
 	z-index: 999;
 }
 
+.logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
 
 object{
     width: 100%;
