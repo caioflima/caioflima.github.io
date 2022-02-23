@@ -724,6 +724,7 @@ footer .base {
 	padding: 4px 0 13px;
 	border-right: none;
 	border-bottom: 1px solid #333;
+    font-size: 15px;
 }
 .col-rodape-3 .telefone-rodape {
 	float: none;
