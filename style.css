@@ -1,5 +1,19 @@
 /*<!-----------------TOPO-----------------!>*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
 
+#header.topo-scroll .barra-topo {
+	display: none;
+}
+
+#header.topo-scroll .topo {
+	height: 80px;
+}
 
 .topo {
     width: 100%;
@@ -76,6 +90,7 @@
 .telefone-topo {
 	color:  rgb(32, 252, 3);
 	font-size: 18px;
+	text-decoration: none;
 }
 
 .contato-topo .telefone-topo strong img {
@@ -166,7 +181,6 @@
   user-select: none;
 }
 
-/* кнопки влево и вправо */
 
 .slider__control {
   position: absolute;
@@ -655,6 +669,15 @@ footer .base {
 .menu-rodape ul li ul {
 	display: none;
 }
+/*CONTEUDO DAS PAGINAS*/
+
+.texto {
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*COLUNAS RODAPE*/ /*ESTA PARTE REFERE AO RODAPE COM COLUNAS*/
 .flex{
 	display: flex;
@@ -700,7 +723,6 @@ footer .base {
 }
 .col-rodape-1 img {
 	width: 180px;
-	padding: 0 0 20px;
 }
 .col-rodape-1 p, .col-rodape-2 p
 .col-rodape-3 p, .col-rodape-4 p{
@@ -841,8 +863,9 @@ footer .base {
 	/*--------------------------------------------------------------
 	- Rodapé
 	--------------------------------------------------------------*/
-	.logo-rodape{
-		height: 104px;
+
+	.logo-rodap{
+		height: 108px;
 	}
 	.icones-validacao img {
 		margin: 0 7px;
@@ -942,3 +965,51 @@ footer .base {
 .checked {
     color: orange;
   }
+/*---------CONTADOR--------------*/
+
+.blocos-contador{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20px;
+	max-width: 340px;
+	min-width: 240px;
+	margin: 0 8px;
+	padding: 30px 0;
+	text-align: center;
+	-webkit-transition: all 300ms linear 0s;
+	-o-transition: all 300ms linear 0s;
+	transition: all 300ms linear 0s;
+}
+.blocos-contador:hover{
+	border: 3px solid #777;
+	background-color: #66cfc2fa;
+	padding: 22px 0;
+	border-color: white;
+}
+.blocos-contador img{
+	width: 160px;
+	padding: 10px 0;
+	-webkit-transition: all 300ms linear 0s;
+	-o-transition: all 300ms linear 0s;
+	transition: all 300ms linear 0s;
+}
+.blocos-contador:hover img{
+	width: 180px;
+}
+
+span#contador {
+	font-size: 45px;
+}
+
+span#contador2 {
+	font-size: 45px;
+}
+
+span#contador3 {
+	font-size: 45px;
+}
+
+span#contador4 {
+	font-size: 45px;
+}
